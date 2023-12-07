@@ -1,0 +1,21 @@
+{
+  "name": "figoursui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+
+  "scripts": {
+    "build": "npx tailwindcss -i ./input.css -o ./main.css",
+    "watch": "npx tailwindcss -i ./input.css -o ./main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "dependencies": "^0.0.1"
+  }
+}
