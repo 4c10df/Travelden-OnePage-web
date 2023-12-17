@@ -889,8 +889,8 @@ video {
   margin-bottom: 9px;
 }
 
-.mr-\[0\.5rem\]{
-  margin-right: 0.5rem;
+.mr-\[1\.5rem\]{
+  margin-right: 1.5rem;
 }
 
 .mt-1{
@@ -911,10 +911,6 @@ video {
 
 .mt-\[1px\]{
   margin-top: 1px;
-}
-
-.mr-\[1\.5rem\]{
-  margin-right: 1.5rem;
 }
 
 .box-border{
@@ -2724,6 +2720,15 @@ video {
   content: var(--tw-content);
 }
 
+.no-scrollbar::-webkit-scrollbar{
+  display: none;
+}
+
+.no-scrollbar{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 ion-icon {
   color: #fff;
 }
@@ -3617,12 +3622,12 @@ input::-webkit-input-placeholder {
     top: 35px;
   }
 
-  .sm\:mt-\[-22\.75rem\]{
-    margin-top: -22.75rem;
-  }
-
   .sm\:ml-\[18px\]{
     margin-left: 18px;
+  }
+
+  .sm\:mt-\[-22\.75rem\]{
+    margin-top: -22.75rem;
   }
 
   .sm\:w-\[150\]{
@@ -4143,3 +4148,4 @@ input::-webkit-input-placeholder {
     width: 1012px;
   }
 }
+
