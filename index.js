@@ -9,32 +9,25 @@ function Menu(e){
   ,list.classList.remove('opacity-100'))
 }
 
-//// for Menupopup end  ////////
-
-
-
-function toggleContent() {
-    var hiddenContent = document.getElementById("hiddenContent1");
-    var button = document.querySelector("button");
-
-    if (hiddenContent.style.display === "none") {
-        hiddenContent.style.display = "block";
-        button.textContent = "See less";
-    } else {
-        hiddenContent.style.display = "none";
-        button.textContent = "See more";
+//// bg color for nav  ////////
+function changeBg(){
+    var navbar = document.getElementById('navbar')
+    var scrollValue = window.scrollY;
+    
+    if(scrollValue < 100){
+        navbar.classList.remove('bgColor');
+    } else{
+        navbar.classList.add('bgColor');
     }
 }
 
+window.addEventListener('scroll', changeBg)
+//// bg color for nav end ////////
 
-let page = document.getElementById("page");
-function closepage(){
-  page.classList.add("open-page");
-}
-function openpage(){
-  page.classList.remove("open-page");
-}
+//// for Menupopup end  ////////
 
+
+//// for seemore  ////////
 let popup = document.getElementById("popup");
 function openPopup(){
   popup.classList.add("open-popup");
@@ -42,9 +35,27 @@ function openPopup(){
 function closePopup(){
   popup.classList.remove("open-popup");
 }
+//// ends for popup   ////////
 
+//// for button apper/ off & on  ////////
+let arrowdown = document.getElementById("arrowdown");
+function appear(){
+  arrowdown.classList.add("close-222");
+}
+function appear1(){
+  arrowdown.classList.remove("close-222");
+}
+//// for button apper/ off & on downbutton ////////
 
-//// for firstto  ////////
+let arrowdown1 = document.getElementById("arrowdown1");
+function appear22(){
+  arrowdown1.classList.add("close-223");
+}
+function appear12(){
+  arrowdown1.classList.remove("close-223");
+}
+
+//// for seemore ends  ////////
 
 
 //// for email  ////////
@@ -54,14 +65,12 @@ var emailerror1 = document.getElementById("email-error1");
 
 function validateEmail2() {
     if(!emailfield1.value.match(/^[A-Za-z\._\-0-9]+[@][A-Za-z]+[+*\.][a-z]{3,4}$/)) {
-      emailerror1.innerHTML ="Valid email required";
       emailfield1.style.borderColor ="red";
       emailfield1.style.backgroundColor =" rgb(248, 200, 200)";
       return false;
     }
-  
     else {
-      emailerror1.innerHTML ="";
+      
       emailfield1.style.borderColor ="green";
       emailfield1.style.backgroundColor ="";
       return true;

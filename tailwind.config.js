@@ -19,6 +19,9 @@ module.exports = {
 
 
       screens: {
+        'smipx': '300px',
+        // => @media (min-width: 640px) { ... }
+
         'ipx': '375px',
         // => @media (min-width: 640px) { ... }
 
@@ -29,6 +32,9 @@ module.exports = {
         // => @media (min-width: 640px) { ... }
 
         'at500': '500px',
+        // => @media (min-width: 640px) { ... }
+
+        'at540': '540px',
         // => @media (min-width: 640px) { ... }
 
         'xlsm': '639px',

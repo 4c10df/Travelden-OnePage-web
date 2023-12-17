@@ -87,7 +87,11 @@ ion-icon {
 
 /******* nav drop-down **********/
 
-
+.bgColor{
+   background-color: #262423;
+   border-bottom: 1px solid #C2C2C2;
+   transition: 2s;
+}
 
 
 
@@ -258,66 +262,63 @@ ion-icon {
     border-radius: 7px;
     text-decoration: none;
  }
-   
- 
-   .arts{
-    color: #FC8233;
-    width: 168.009px;
-    height: 61.009px;
-    padding: 18.075px 29.433px;
-    border-radius: 44.164px;
-    border: 1.813px solid var(--neutral-colors-white, #FFF);
-    box-shadow: 0px 4px 10px 0px rgba(20, 20, 43, 0.04);
-   }
-   
-   .arts:hover {
-      border: solid rgb(238, 181, 131)1px;
-      background: #e6ad7b;
-      background-image: -webkit-linear-gradient(top, #F5811E, #F5811E);
-      background-image: -moz-linear-gradient(top, #F5811E, #F5811E);
-      background-image: -ms-linear-gradient(top, #F5811E, #F5811E);
-      background-image: -o-linear-gradient(top, #F5811E, #F5811E);
-      background-image: -webkit-gradient(to bottom, #F5811E, #F5811E);
-      -webkit-border-radius: 7px;
-      -moz-border-radius: 7px;
-      border-radius: 7px;
-      text-decoration: none;
-   }
 
-   .ant:hover {
-    border-bottom: solid rgb(238, 181, 131)1px;
-    text-decoration: none;
- }
+ /** button  & popupmore **/
+   .arrow{
+      color: #FC8233;
+      width: 168.009px;
+      height: 61.009px;
+
+   }
+   .arrowdown{
+      display: block;
+   }
+   hr {
+      background-color: #FC8233;
+      width: 1015px;
+      border-color: #FC8233;
+      
+  }
  
+  .close-222 {
+      display: none;
+  }
+
+/** button appear ***/
+  .arrowdown1{
+   display: none;
+}
+.close-223 {
+   display: block;
+}
+/** button appear end ***/
+
   
+  
+ 
+ .yamaheight {
+   height: 1309px;
+   overflow:auto;
+   z-index: 1;
+   width: 100%;
+ }
 
-   .popup{
-      border-radius: 6px;
-      position: absolute;
-      left: 50%;
-      transform: translate(-154%,-71%) scale(0.1);
-      text-align: left;
-      color: #333;
-      visibility: hidden;
-      transition: transform 0.4s, top 0.4s;
-  }
+
+ .popup {
+   border-radius: 6px;
+   text-align: left;
+   color: #333;
+   display: none;
+   transition: transform 0.4s, top 0.4s;
+}
   /*for javascript open and close button code linked*/
+
   .open-popup{
-      visibility: visible;
-      left: 0%;
-      transform: translate(0%,-99%) scale(1);
+   display: block;
   }
 
-  .open-page{
-   visibility: hidden;
-   transition: transform 0.4s,;
-   transform: translate(0%,-99%) scale(1);
-  }
 
-  .closeer-button{
-   visibility: hidden;
-  }
-
+/** button  & popupmore **/
 
 
 
