@@ -1,8 +1,11 @@
 *{
-  font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
   padding:0;
   margin:0;
+  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 /*
@@ -3314,18 +3317,6 @@ input::-webkit-input-placeholder {
     width: 426px;
   }
 
-  .smipx\:w-\[14x\]{
-    width: 14x;
-  }
-
-  .smipx\:w-\[\]{
-    width: ;
-  }
-
-  .smipx\:w-\[100\]{
-    width: 100;
-  }
-
   .smipx\:text-\[19px\]{
     font-size: 19px;
   }
@@ -3420,6 +3411,10 @@ input::-webkit-input-placeholder {
     height: auto;
   }
 
+  .ipx\:w-\[100\%\]{
+    width: 100%;
+  }
+
   .ipx\:w-\[151px\]{
     width: 151px;
   }
@@ -3450,10 +3445,6 @@ input::-webkit-input-placeholder {
 
   .ipx\:w-\[607px\]{
     width: 607px;
-  }
-
-  .ipx\:w-\[100\%\]{
-    width: 100%;
   }
 
   .ipx\:pb-11{
@@ -3656,26 +3647,6 @@ input::-webkit-input-placeholder {
 
   .sm\:w-\[417px\]{
     width: 417px;
-  }
-
-  .sm\:w-\[149px\]{
-    width: 149px;
-  }
-
-  .sm\:w-\[60\]{
-    width: 60;
-  }
-
-  .sm\:w-\[60\%\]{
-    width: 60%;
-  }
-
-  .sm\:w-\[1\%\]{
-    width: 1%;
-  }
-
-  .sm\:w-\[100\%\]{
-    width: 100%;
   }
 
   .sm\:gap-5{
